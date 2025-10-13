@@ -11,10 +11,11 @@
 
 ! [screenshot] (. /screenshot.png)
 
-the bottom
-- `--stateflags` (`-%`)
-  Show current state info
-- `--minibar` (`—_`)
+
+- `z` Hide header
+-` x` Hide Bottom Help
+- `n` Line numbering 
+- `s` Soft wrapping
   Hide title bar and show state info on the botom
 - `--modernbindings` `-/`
   modern key bindngs like ^c, ^v for copy paste
