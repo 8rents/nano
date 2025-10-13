@@ -1,4 +1,8 @@
-## Useful  Start up options
+# Notable Nano Options
+
+> *Some of the more relavent & notable options for our fair command line editor*
+
+## Start up options
 
 Append these when starting nano
 
