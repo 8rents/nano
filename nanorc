@@ -1,0 +1,78 @@
+# nanorc
+
+# user level nano configuration file
+# https://www.reddit.com/r/linux/comments/1f3jeoo/what_does_your_nanorc_look_like/
+
+# __________________________
+
+###########
+# editing #
+###########
+
+# Softwrap lines longer than display
+set softwrap
+# Line breaks at space, not character
+set atblanks
+set autoindent
+set trimblanks
+set tabsize 4
+set tabstospaces
+extendsyntax makefile tabgives " "
+set cutfromcursor
+set zap
+set smarthome
+set nonewlines
+
+# __________________________
+
+##########
+# editor #
+##########
+
+# Hide help on bottom
+set nohelp
+# Show minibar on bottom
+set minibar
+set indicator
+# Show line numbers
+set linenumbers
+set positionlog
+set constantshow
+# State info in minibar
+set stateflags
+# Enable mouse support
+set mouse
+# Make backup of file before save with prepended ~
+# set backup
+set historylog
+set multibuffer
+
+# __________________________
+
+###################
+# interface color #
+###################
+
+set titlecolor bold,white,grey
+set statuscolor bold,white,grey
+set errorcolor bold,lightwhite,red
+set selectedcolor lightwhite,slate
+set stripecolor ,white
+set scrollercolor grey
+set numbercolor  grey
+set keycolor yellow
+set functioncolor lightblack
+set minicolor bold,white,grey
+set promptcolor bold,white,yellow
+
+# __________________________
+
+################################
+# Modern key bindings for nano #
+################################
+# https://github.com/davidhcefx/Modern-Nano-Keybinding
+
+###########
+# Credits
+# - https://www.reddit.com/r/linux/comments/1f3jeoo/what_does_your_nanorc_look_like/
+# - https://github.com/davidhcefx/Modern-Nano-Keybinding
