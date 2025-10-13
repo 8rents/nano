@@ -1,9 +1,10 @@
 # nanorc
 
 # user level nano configuration file
-# https://www.reddit.com/r/linux/comments/1f3jeoo/what_does_your_nanorc_look_like/
-
+# https://www.reddit.com/r/linux/comments/1f3jeoo/what_does_your_nanorc_look_like
 # __________________________
+
+include ./nano-syntax-highlighting/*.nanorc
 
 ###########
 # editing #

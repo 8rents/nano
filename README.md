@@ -1,20 +1,35 @@
-# Nano Guide
+# Nano configs
 
-## Start up options
+> *The most dissed and ignored editor in the world.*
 
-Append these when starting nano
+---
 
-- `--smarthome` (`—A`)
-- `--backup` (`—B`
-  Creat a backup of the file before save prepended with a `~`
-- `--backupdir=`*directory-path* (`—C`)
-  Specify a separate directory to hold numbered backups
-- `--multibuffer` (`—F`)
-- `--atblanks` (`—a`)
-  Hard wrap at blank instead of letter
-- `--rcfile=`*path* (`—f`)
-  Specify a path for a rc file. `~/.config/nano/nanorc` works for user  config 
-- `--linenumbers` (`—l`)
+- Modern key bindings
+- Improved color schemes
+- Better, more modern interface
+- The best options enabled
+
+! [screenshot] (. /screenshot.png)
+
+the bottom
+- `--stateflags` (`-%`)
+  Show current state info
+- `--minibar` (`—_`)
+  Hide title bar and show state info on the botom
+- `--modernbindings` `-/`
+  modern key bindngs like ^c, ^v for copy paste
+
+
+
+## When a buffer is open
+
+(M) alt+ z,x,n,s
+
+- `z` Hide header
+-` x` Hide Bottom Help
+- `n` Line numbering 
+- `s` Soft wrapping
+mbers` (`—l`)
   show line numbers
 - `--mouse` (`—m`)
   Enable mouse support
