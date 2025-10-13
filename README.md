@@ -4,7 +4,7 @@ __Home__ __|__ [Additional Docs](docs/README.md)
 
 # Nano configs
 
-> *The most dissed and ignored editor in the world.*
+> *Modernizing the most dissed editor on the command line...*
 
 ---
 
@@ -13,5 +13,4 @@ __Home__ __|__ [Additional Docs](docs/README.md)
 - Better, more modern interface
 - The best options enabled
 
-! [screenshot] (./screenshot.png)
-
+s![screenshot](screenshot.png)
