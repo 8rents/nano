@@ -6,76 +6,162 @@
 # https://www.reddit.com/r/linux/comments/1f3jeoo/what_does_your_nanorc_look_like
 # __________________________
 
-# include ./nano-syntax-highlighting/*.nanorc
-
 ###########
 # editing #
 ###########
 
 # Softwrap lines longer than display
 set softwrap
+
 # Line breaks at space, not character
 set atblanks
+
+# Use auto-indentation
 set autoindent
+
+# Remove blank lines at end of file
 set trimblanks
-set tabsize 4
-set tabstospaces
-extendsyntax makefile tabgives " "
-set cutfromcursor
-set zap
-set smarthome
+
+# Don't add newlines to the ends of files
 set nonewlines
+
+# Set the tab size (default is 8)
+set tabsize 4
+
+# Convert typed tabs to spaces
+set tabstospaces
+
+# Make the 'Cut Text' command (normally ^K) cut from the cur rent cursor position to the end of  the  line,  instead  of cutting the entire line
+set cutfromcursor
+
+# Detect word boundaries more accurately by treating punctuation characters as part of a word
+set wordbounds
+
+# Let  an  unmodified  Backspace  or  Delete erase the marked region (instead of a single character, and without  affecting the cutbuffer)
+set zap
+
+# Make the Home key smarter. When Home is pressed anywhere but at the very beginning of non-whitespace characters on a line, the cursor will jump to that beginning (either forwards or backwards). If the cursor is already at that position, it will jump to the true beginning of the line
+set smarthome
+
+# Do case sensitive searches by default
+unset casesensitive
+
+# Don't add newlines to the ends of files
+set nonewlines
+
+# Don't convert files from DOS/Mac format
+unset noconvert
 
 # __________________________
 
-##########
-# editor #
-##########
+#############
+# Interface #
+############
 
 # Hide help on bottom
 set nohelp
-# Show minibar on bottom
+
+# Supress titlebar,instead Show minibar on bottom
 set minibar
+
+# Do quick statusbar blanking. Statusbar messages will disappear after 1 keystroke instead of 25
+unset quickblank
+
+# Display a "scrollbar" on the righthand side
 set indicator
+
 # Show line numbers
 set linenumbers
+
+# Display the cursor position row,col in the status bar
 set positionlog
+
+# Use blank line below title bar for editing
+unset morespace
+
+# Constantly display the cursor position and line number on the statusbar. 
 set constantshow
+
 # State info in minibar
 set stateflags
-# Enable mouse support
-set mouse
-# Make backup of file before save with prepended ~
-# set backup
-set historylog
-set multibuffer
 
-# __________________________
+# Enable mouse support, When enabled, mouse clicks can be used to place the cursor, set the mark (with a double click),
+set mouse
+
+# Use smooth scrolling. Line by line, not chunks
+set smooth
+
+# Don't follow symlinks when writing files
+unset nofollow
+
+# Create backup files in "filename~"
+unset backup
+
+# Set the directory where nano puts unique backup files
+# only if file backups are enabled
+set backupdir "./backups"
+
+# Log search and replace strings to ~/.nano_history
+set historylog
+
+# Enable multiple file buffers
+set multibuffer
 
 ###################
 # interface color #
 ###################
 
+# Color options syntax:
+# set option [bold,][italic,]foreground,background
+
+# Valid color names
+# pink, purple, mauve, lagoon, mint, lime, peach, orange, latte, rosy, beet, plum, sea, sky, slate, teal, sage, brown, ocher, sand, tawny, brick, crimson, normal
+
+# titlebar color
 set titlecolor bold,white,grey
+
+# statusbar color
 set statuscolor bold,white,grey
+
+# statusbar error color
 set errorcolor bold,lightwhite,red
+
+# selected text color
 set selectedcolor lightwhite,slate
+
+# Vertical guiding stripe
 set stripecolor ,white
+
+# scrollbar indicator color
 set scrollercolor grey
+
+# Line number color
 set numbercolor  grey
+
+
 set keycolor yellow
 set functioncolor lightblack
-set minicolor bold,white,grey
-set promptcolor bold,white,yellow
 
-# __________________________
+# Bottom minibar color
+set minicolor bold,white,grey
+
+# 
+set promptcolor bold,white,yellow
 
 ################################
 # Modern key bindings for nano #
 ################################
-# https://github.com/davidhcefx/Modern-Nano-Keybinding
+
+# Insert keybindings here
+
+################################
+# Improved Syntax Highlighting #
+################################
+
+# includes go here
 
 ###########
-# Credits
-# - https://www.reddit.com/r/linux/comments/1f3jeoo/what_does_your_nanorc_look_like/
+# Credits #
+###########
+# -  https://www.reddit.com/r/linux/comments/1f3jeoo/what_does_your_nanorc_look_like/
 # - https://github.com/davidhcefx/Modern-Nano-Keybinding
