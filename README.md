@@ -1,9 +1,9 @@
-# Nano Settings
-
 __Home__ __|__ [Todo](TODO.md) __|__ [Additional Docs](docs/README.md)
 
----
-> *Modernizing the most dissed editor on the command line...*
+# Nano Settings
+
+> Modernizing the most dissed editor on the command line...*
+
 ---
 
 - Modern key bindings
