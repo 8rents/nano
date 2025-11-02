@@ -77,7 +77,7 @@ set linenumbers
 set positionlog
 
 # Use blank line below title bar for editing
-unset morespace
+# unset morespace
 
 # Constantly display the cursor position and line number on the statusbar. 
 set constantshow
@@ -89,17 +89,16 @@ set stateflags
 set mouse
 
 # Use smooth scrolling. Line by line, not chunks
-set smooth
+# set smooth
 
 # Don't follow symlinks when writing files
-unset nofollow
+# unset nofollow
 
 # Create backup files in "filename~"
 unset backup
 
-# Set the directory where nano puts unique backup files
-# only if file backups are enabled
-set backupdir "./backups"
+# Set the directory where nano puts unique backup files. Only if file backups are enabled
+# set backupdir "backups"
 
 # Log search and replace strings to ~/.nano_history
 set historylog
@@ -138,14 +137,16 @@ set scrollercolor grey
 # Line number color
 set numbercolor  grey
 
-
+# keys colors
 set keycolor yellow
+
+# function block color
 set functioncolor lightblack
 
 # Bottom minibar color
 set minicolor bold,white,grey
 
-# 
+# prompt color
 set promptcolor bold,white,yellow
 
 ################################
@@ -158,7 +159,7 @@ set promptcolor bold,white,yellow
 # Improved Syntax Highlighting #
 ################################
 
-# includes go here
+# includes go here. 1 file per line
 
 ###########
 # Credits #
