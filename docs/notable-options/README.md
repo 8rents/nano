@@ -1,3 +1,5 @@
+[Home](../../README.md) __|__ [Todo](../../TODO.md) __|__ __[Additional Docs](../README.md)__
+
 # Notable Nano Options
 
 > *Some of the more relavent & notable options for our fair command line editor*
