@@ -1,8 +1,8 @@
 #######################################
 # nanorc                              #
 #######################################
-# user level nano configuration file  #
-# install into $HOME/.config          #
+# user level nano configuration file
+# install into $HOME/.config/nano
 #######################################
 
 ###########
@@ -53,9 +53,9 @@ unset noconvert
 
 # __________________________
 
-#############
-# Interface #
-############
+###########
+# Interface
+###########
 
 # Hide help on bottom
 set nohelp
@@ -78,7 +78,7 @@ set positionlog
 # Use blank line below title bar for editing
 # unset morespace
 
-# Constantly display the cursor position and line number on the statusbar. 
+# Constantly display the cursor position and line number on the statusbar
 set constantshow
 
 # State info in minibar
@@ -105,15 +105,12 @@ set historylog
 # Enable multiple file buffers
 set multibuffer
 
-###################
-# interface color #
-###################
-
-# Color options syntax:
-# set option [bold,][italic,]foreground,background
-
-# Valid color names
-# pink, purple, mauve, lagoon, mint, lime, peach, orange, latte, rosy, beet, plum, sea, sky, slate, teal, sage, brown, ocher, sand, tawny, brick, crimson, normal
+#################
+# interface color
+#################
+# Valid color names: pink, purple, mauve, lagoon, mint, lime, peach, orange, latte, rosy, beet, plum, sea, sky, slate, teal, sage, brown, ocher, sand, tawny, brick, crimson, normal
+# Color options syntax: set option [bold,][italic,]foreground,background
+#################
 
 # titlebar color
 set titlecolor bold,white,grey
@@ -148,20 +145,21 @@ set minicolor bold,white,grey
 # prompt color
 set promptcolor bold,white,yellow
 
-################################
-# Modern key bindings for nano #
-################################
+##############################
+# Modern key bindings for nano
+##############################
 
 # Insert keybindings here
 
-################################
-# Improved Syntax Highlighting #
-################################
+##############################
+# Improved Syntax Highlighting
+##############################
 
 # includes go here. 1 file per line
 
-###########
-# Credits #
-###########
-# -  https://www.reddit.com/r/linux/comments/1f3jeoo/what_does_your_nanorc_look_like/
+#########
+# Credits
+#########
+# - https://www.reddit.com/r/linux/comments/1f3jeoo/what_does_your_nanorc_look_like/
 # - https://github.com/davidhcefx/Modern-Nano-Keybinding
+#########
