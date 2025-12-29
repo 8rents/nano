@@ -1,13 +1,20 @@
-#######################################
-# nanorc                              #
-#######################################
+# ======
+# nanorc
+# ======
 # user level nano configuration file
-# install into $HOME/.config/nano
-#######################################
+# ----------------------------------
+# install to: $HOME/.config/nano
+# ----------------------------------
 
-###########
-# editing #
-###########
+# --------
+# Sections
+# --------
+# 1. editing options
+# 2. interface features
+
+# =======
+# editing
+# =======
 
 # Softwrap lines longer than display
 set softwrap
@@ -51,11 +58,9 @@ set nonewlines
 # Don't convert files from DOS/Mac format
 unset noconvert
 
-# __________________________
-
-###########
+# =========
 # Interface
-###########
+# =========
 
 # Hide help on bottom
 set nohelp
@@ -105,12 +110,22 @@ set historylog
 # Enable multiple file buffers
 set multibuffer
 
-#################
+# ===============
 # interface color
-#################
-# Valid color names: pink, purple, mauve, lagoon, mint, lime, peach, orange, latte, rosy, beet, plum, sea, sky, slate, teal, sage, brown, ocher, sand, tawny, brick, crimson, normal
-# Color options syntax: set option [bold,][italic,]foreground,background
-#################
+# ===============
+# Color options syntax:
+# set option [bold,][italic,]foreground,background
+# -----------------
+# Valid color names
+# -----------------
+# basic colors [always supported]
+# black, white, red, magenta, green, yellow, blue, cyan, normal
+# -----------------
+# extendeded colors [less supported]
+# pink, purple, mauve, lagoon, mint, lime, peach, orange, latte, rosy, beet, plum, sea, sky, slate, teal, sage, brown, ocher, sand, tawny, brick, crimson, normal
+# --------------------
+# color name prefixes (you can prefix the following to any basic or advanced names. Like lightcyan, brightblue): bright, light
+# ---------------------
 
 # titlebar color
 set titlecolor bold,white,grey
@@ -122,16 +137,16 @@ set statuscolor bold,white,grey
 set errorcolor bold,lightwhite,red
 
 # selected text color
-set selectedcolor lightwhite,slate
+set selectedcolor lightwhite,lightred
 
 # Vertical guiding stripe
-set stripecolor ,white
+set stripecolor lightblack
 
 # scrollbar indicator color
-set scrollercolor grey
+set scrollercolor lightblack
 
 # Line number color
-set numbercolor  grey
+set numbercolor lightblack,black
 
 # keys colors
 set keycolor yellow
@@ -140,26 +155,28 @@ set keycolor yellow
 set functioncolor lightblack
 
 # Bottom minibar color
-set minicolor bold,white,grey
+set minicolor bold,white,lightblack
 
 # prompt color
 set promptcolor bold,white,yellow
 
-##############################
+# ----------------------------
 # Modern key bindings for nano
-##############################
+# ----------------------------
 
-# Insert keybindings here
+# Insert keybindings hy fi here
 
-##############################
+# ----------------------------
 # Improved Syntax Highlighting
-##############################
+# ----------------------------
 
 # includes go here. 1 file per line
 
-#########
+# =======
 # Credits
-#########
-# - https://www.reddit.com/r/linux/comments/1f3jeoo/what_does_your_nanorc_look_like/
-# - https://github.com/davidhcefx/Modern-Nano-Keybinding
-#########
+# =======
+# author: github.com/8rents
+# -------
+# Links
+# *  https://www.reddit.com/r/linux/comments/1f3jeoo/what_does_your_nanorc_look_like/
+# * https://github.com/davidhcefx/Modern-Nano-Keybinding
