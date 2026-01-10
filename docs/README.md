@@ -3,3 +3,4 @@
 # Nano Docs
  
 - [Notable Options](notable-options/README.md) 
+- [Mutlibuffer & Workflow Tips](multibuffer-and-tips/README.md)
