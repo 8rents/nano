@@ -2,7 +2,7 @@ __Home__ __|__ [Todo](TODO.md) __|__ [Additional Docs](docs/README.md)
 
 # Nano Settings
 
-> ***Modernizing the most dissed editor on the command line...***
+> *Modernizing the most dissed editor on the command line...*
 
 ---
 
@@ -16,6 +16,10 @@ __Home__ __|__ [Todo](TODO.md) __|__ [Additional Docs](docs/README.md)
 ## *What it looks like*
 
 ![screenshot](screenshot.png)
+
+## Articles
+
+- [Using Multibuffer & Helpful Tips](docs/multibuffer-and-tips/README.md)
 
 ## Links / Sources
 
