@@ -28,8 +28,8 @@ nano file1.txt file2.txt
 
 ## Cycle through files in nano
 
-- **next file:** `alt + right arrow`
-- **prev file:** `alt + left arrow`
+- **next file:** `alt + .`
+- **prev file:** `alt + ,`
 
 ## Opening files within nano
 
