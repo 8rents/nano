@@ -22,7 +22,7 @@ __Home__ __|__ [Todo](TODO.md) __|__ [Additional Docs](docs/README.md)
 - [Notable Options](docs/notable-options/README.md) 
 - [ Mutlibuffer& Workflow Tips](docs/multibuffer-and-tips/README.md)
 - [Functions in Nano and binding them to create a more modern feel](docs/function-binding/README.md)
-- [Working with colors in Nano](colors/README.md)
+- [Working with colors in Nano](docs/colors/README.md)
 
 
 ## Links / Sources
@@ -31,5 +31,5 @@ __Home__ __|__ [Todo](TODO.md) __|__ [Additional Docs](docs/README.md)
 - [davidhcefx/nanorc - Modern Nano Keybindings](https://github.com/davidhcefx/Modern-Nano-Keybindings)
 - [scopatz/nanorc - Improved Nano Syntax Highlighting Files](https://github.com/scopatz/nanorc)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzY4ODY1MTFdfQ==
+eyJoaXN0b3J5IjpbNzMxNjU3MzldfQ==
 -->
