@@ -6,8 +6,6 @@ __Home__ __|__ [Todo](TODO.md) __|__ [Additional Docs](docs/README.md)
 
 ---
 
-## *With*
-
 - More Modern key bindings
 - New & Improved color schemes
 - A Better, cooler looking, and more functional interface
@@ -31,5 +29,5 @@ __Home__ __|__ [Todo](TODO.md) __|__ [Additional Docs](docs/README.md)
 - [davidhcefx/nanorc - Modern Nano Keybindings](https://github.com/davidhcefx/Modern-Nano-Keybindings)
 - [scopatz/nanorc - Improved Nano Syntax Highlighting Files](https://github.com/scopatz/nanorc)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMxNjU3MzldfQ==
+eyJoaXN0b3J5IjpbLTEyNDkyMzIxMTFdfQ==
 -->
