@@ -8,7 +8,8 @@ Documents on reconfiguring Nano
  
 - [Notable Options](notable-options/README.md) 
 - [ Mutlibuffer& Workflow Tips](multibuffer-and-tips/README.md)
-- [Functions in Nano and binding them
+- [Functions in Nano and binding them to create a more modern feel](function-binding/README.md)
+- [Working with colors in Nano]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MTI2NzQ3MV19
+eyJoaXN0b3J5IjpbLTU5NTk2ODU4XX0=
 -->
