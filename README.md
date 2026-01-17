@@ -15,14 +15,21 @@ __Home__ __|__ [Todo](TODO.md) __|__ [Additional Docs](docs/README.md)
 
 ## *What it looks like*
 
-![screenshot](screenshot.png)
+![screenshot](https://raw.githubusercontent.com/8rents/nano/refs/heads/main/screenshot.png)
 
 ## Articles
 
-- [Using Multibuffer & Helpful Tips](docs/multibuffer-and-tips/README.md)
+- [Notable Options](docs/notable-options/README.md) 
+- [ Mutlibuffer& Workflow Tips](dmultibuffer-and-tipsoc/README.md)
+- [Functions in Nano and binding them to create a more modern feel](function-binding/README.md)
+- [Working with colors in Nano](colors/README.md)
+
 
 ## Links / Sources
 
 - [Reddit/Ask Linux - What does your nanorc look like?](https://www.reddit.com/r/linux/comments/1f3jeoo/what_does_your_nanorc_look_like)
 - [davidhcefx/nanorc - Modern Nano Keybindings](https://github.com/davidhcefx/Modern-Nano-Keybindings)
 - [scopatz/nanorc - Improved Nano Syntax Highlighting Files](https://github.com/scopatz/nanorc)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTk4NjM5MDAzMV19
+-->
