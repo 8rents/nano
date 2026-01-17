@@ -2,7 +2,9 @@
 
 # Nano Docs
 
-Documents on reconfiguring Nano 
+> *Documents on reconfiguring Nano*
+
+---
  
  To create a more modern feel. 
  
@@ -11,5 +13,5 @@ Documents on reconfiguring Nano
 - [Functions in Nano and binding them to create a more modern feel](function-binding/README.md)
 - [Working with colors in Nano](colors/README.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MDM3NTg0M119
+eyJoaXN0b3J5IjpbLTU5NzQ1NDI1OF19
 -->
