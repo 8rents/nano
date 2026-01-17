@@ -4,7 +4,7 @@
 
 > *The neverending list of things to do*
 
----
+
 
 ## ToDo's
 
@@ -19,3 +19,6 @@
 
 - [x] **Fix any formatting issues with the nanorc**
 - [x] **Get bulk of visual configuration done**
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzgxODc4ODk5XX0=
+-->
