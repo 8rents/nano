@@ -1,17 +1,16 @@
 [Home](../README.md) __|__ [Todo](../TODO.md) __|__ __Additional Docs__
 
+---
+
 # Nano Docs
 
-> *Documents on reconfiguring Nano*
+> *Documents on reconfiguring Nano to create a more modern feel.s*
 
 ---
- 
- To create a more modern feel. 
- 
-- [Notable Options](notable-options/README.md) 
-- [ Mutlibuffer& Workflow Tips](multibuffer-and-tips/README.md)
-- [Functions in Nano and binding them to create a more modern feel](function-binding/README.md)
-- [Working with colors in Nano](colors/README.md)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NzQ1NDI1OF19
--->
+
+## Articles 
+
+- [Notable Options](notable-options.md)
+- [ Mutlibuffer& Workflow Tips](multibuffer-and-tips.md)
+- [Functions in Nano and binding them to create a more modern feel](function-binding.md)
+- [Working with colors in Nano](colors.md)
