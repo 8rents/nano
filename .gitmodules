@@ -1,3 +1,6 @@
-[submodule "nano-syntax-highlighting"]
-	path = nano-syntax-highlighting
+[submodule "highlighting"]
+	path = lib/highlighting
 	url = https://github.com/galenguyer/nano-syntax-highlighting
+[submodule "keybindings"]
+    path = lib/keybindings
+    url = https://github.com/davidhcefx/Modern-Nano-Keybindings

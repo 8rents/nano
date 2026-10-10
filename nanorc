@@ -128,34 +128,38 @@ set multibuffer
 # ---------------------
 
 # titlebar color
-set titlecolor bold,white,grey
+# hidden in favor of bottom minibar
+set titlecolor bold,white
 
 # statusbar color
-set statuscolor bold,white,grey
+set statuscolor bold,white,lightblack
 
 # statusbar error color
 set errorcolor bold,lightwhite,red
 
 # selected text color
-set selectedcolor lightwhite,lightred
+set selectedcolor bold,black,lightred
 
-# Vertical guiding stripe
+# vertical guiding stripe
+# - off, for monitoring line length
 set stripecolor lightblack
 
 # scrollbar indicator color
-set scrollercolor lightblack
+# background is scrollbar gutter
+set scrollercolor black
 
 # Line number color
-set numbercolor lightblack,black
+set numbercolor lightblack
 
 # keys colors
-set keycolor yellow
+set keycolor lightblack
 
 # function block color
 set functioncolor lightblack
 
 # Bottom minibar color
-set minicolor bold,white,lightblack
+# - in favor of top status bar
+set minicolor bold,lightblack
 
 # prompt color
 set promptcolor bold,white,yellow
