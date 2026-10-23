@@ -1,0 +1,8 @@
+# Nano Git Ignore File
+# ====================
+
+# Everything in lib/
+lib/
+
+# Except the main README.md in lib/
+!lib/README.md
