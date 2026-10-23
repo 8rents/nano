@@ -1,46 +1,85 @@
-# Functions in Nano and binding them
-
-> *With the built in functions that Nano provides, we will be able to bind all the well tread, predictable keyboard shortcuts to the proper functions to make Nano modern and easy to use.*
+[Nano](../README.md) __|__ __[Documentation](README.md)__
 
 ---
 
-The following is a list of built in functions in nano. They each or multiple ones can be bound to a specific keyboard shortcut. 
+# Modernizing Nano: Rebinding functions to key commands
 
-## Modernizing Nano's keyboard shortcuts
+> *With the built in functions that Nano provides, we will be able to bindthe well tread, predictable keyboard shortcuts to the proper functions to make Nano modern and easy to use again*
 
-Following consistency with other major browsers and environments.
+---
 
-## The Useful functions that deserve bindings
+## Table of Contents
 
-- __`help`__ - `^?`-  Invokes the help viewer.
+- [List of Functions to Rebind](#list-of-functions-to-rebind) - These are the important Nano functions I'm going to focus on to create a better experience.
+- [Complete List of Valid Function Names in Nano](#complete-list-of-valid-function-names-in-nano) - The entire list of built in fucntion names from which to choose from.
+- [Valid Nano Menu Sections](#valid-nano-menu-selections) - When binding a key to a function you need to include a menu to use. This is the complete list of menus.
+- [Binding a Function and Menu to a Key Command](#binding-a-function-and-menu-to-a-key) - A practical example of binding a new key command.
+
+---
+
+The following is a list of built in functions in nano. They each or multiple ones can be bound to a specific keyboard shortcut.
+
+## List of Functions to Rebind
+
+Following consistency with other major browsers, editors and IDEs.
+
+The following are the functions that need to be rebinded.
+
+### Saving, Opening and Closing
+
 - __`cancel^d`__ - `esc` - Cancels the current command.
 - __`exit`__ - `^w` - Exits from the program (or from the help viewer or file browser).
+- __`browser`__ - `^o` - Starts the file browser (in the Read File and Write Out menus), allowing to select a file from a list.
 - __`writeout`__ - `^S` -  Writes the current buffer to disk, asking for a name.
 - __`savefile`__ - `^s` - Writes the current file to disk without prompting.
+
+### Searching for Text
+
 - __`whereis`__ - `^f` - Starts a 2forward search for text in the c22urrent buffer — or for filenames matching a string in the current list in the file browser.
 - __`wherewas`__ - `^!F` - Starts a backward search for text in the current buffer — or for filenames matching a string in the current list in the file browser.
 - __`findprevious`__ - `^!f` -  Searches the next occurrence in the backward direction.
 - __`findnext`__ - `^g` -  Searches the next occurrence in the forward direction.
-- __`replace`__ - `^!@f` -  Interactively replaces text within the current buffer.
-- __`cut`__ - `^x` -  Cuts and stores the current line (or the marked region).
-- __`copy`__ - `^c` - Copies the current line (or the marked region) without deleting it.
-- __`paste`__ - `^v` - Pastes the currently stored text into the current buffer at the current cursor position.
+- __`replace`__ - `^r` -  Interactively replaces text within the current buffer.
+
+### Selecting / Copying & Pasting
+
 - __`mark`__ - `^m` - Sets the mark at the current position, to start selecting text. Or, when it is set, unsets the mark.
+- __`selectall`__ - `^a`  Selects (marks) all of the text in the buffer
+- __`copy`__ - `^c` - Copies the current line (or the marked region) without deleting it.
+- __`cut`__ - `^x` -  Cuts and stores the current line (or the marked region).
+- __`paste`__ - `^v` - Pastes the currently stored text into the current buffer at the current cursor position.
+
+### Text Editing Macros
+
+- __`comment`__ - `^/` - Comments or uncomments the current line or the marked lines, using the comment style specified in the active syntax.
+- __`indent`__ - `^]` - Indents (shifts to the right) the current line or the marked lines.
+- __`unindent`__ - `^[` - Unindents (shifts to the left) the current line or the marked lines.
+- __`prevblock`__ - `^up` - Moves the cursor to the beginning of the current or preceding block of text. (Blocks are separated by one or more blank lines.
+- __`nextblock`__ -  - `^down` Moves the cursor to the beginning of the next block of text.
+
+### Editing with external programs
+
+- __`speller`__ - `^e`- Invokes a spell-checking program, either the default `hunspell`(1) or GNU `spell`(1), or the one defined by `--speller` or `set speller`.
+- __`formatter`__ - `^b` - Invokes a full-buffer-processing program (if the active syntax defines one). (The current buffer is written out to a temporary file, the program is run on it, and then the temporary file is read back in, replacing the contents of the buffer.)
+- __`linter`__ - `^l` - Invokes a syntax-checking program (if the active syntax defines one). If this program produces lines of the form "filename:linenum:charnum: some message", then the cursor is put at the indicated position in the mentioned file while showing "some message" on the status bar. You can move from message to message with <PgUp> and <PgDn>, and leave linting mode with ^C or <Enter>.
+
+### Interface Adjustments
+
+- __`softwrap`__ - `^w` - Toggles the displaying of overlong lines on multiple screen lines.
+- __`linenumbers`__ - `^n` - Toggles the display of line numbers in front of the text.
 - __`zero`__ - `^k` - Toggles the presence of title bar and status bar.
-- __`softwrap`__ - `^!w` - Toggles the displaying of overlong lines on multiple screen lines.
-- __`linenumbers`__ - `^!l` - Toggles the display of line numbers in front of the text.
-- __`nosyntax`__ - `^k` - Toggles syntax highlighting.
-- __`firstfile`__ - `^a`  Goes to the first file in the list when using the file browser.
-- __`lastfile`__ - `^e` - Goes to the last file in the list when using the file browser.
+- __`help`__ - `^?`-  Invokes the help viewer.
 - __`nohelp`__ - `^?` - Toggles the presence of the two-line list of key bindings at the bottom of the screen. (This toggle is special: it is available in all menus except the help viewer and the linter. All further toggles are available in the main menu only.)
 
-## All Valid function names to be bound are:
+---
+
+## Complete List of Valid Function Names in Nano
 
 > ### Keyboard shortcut symbnols
 >
 > - `^` - Control
 > - `!` - Shift
-> - `@` - Alt
+> - `M` - Alt
 
 - __`help`__ - `^?`-  Invokes the help viewer.
 - __`cancel^d`__ - `esc` - Cancels the current command.
@@ -71,7 +110,7 @@ Following consistency with other major browsers and environments.
 - __`fulljustify`__ - Justifies the entire current buffer (or the marked region).
 - __`indent`__ - Indents (shifts to the right) the current line or the marked lines.
 - __`unindent`__ - Unindents (shifts to the left) the current line or the marked lines.
-- __`comment`__ - `^!m` - Comments or uncomments the current    line or the marked lines, using the comment style specified in the active syntax.
+- __`comment`__ - `^/` - Comments or uncomments the current line or the marked lines, using the comment style specified in the active syntax.
 - __`complete`__ - Completes (when possible) the fragment before the cursor to a full word found elsewhere in the current buffer.
 - __`left`__ - Goes left one position (in the editor or browser).
 - __`right`__ - Goes right one position (in the editor or browser).
@@ -80,14 +119,14 @@ Following consistency with other major browsers and environments.
 - __`scrollup`__ - Scrolls the viewport up one row (meaning that the text slides down) while keeping the cursor in the same text position, if possible. (This function is bound by default to `Alt+Up`. If `Alt+Up` does nothing on your Linux console, see the FAQ: <https://nano-editor.org/dist/latest/faq.html#4.1>
 - __`scrolldown`__ - Scrolls the viewport down one row (meaning that the text slides up) while keeping the cursor in the same text position, if possible. (This function is bound by default to <Alt+Down>.)
 - __`center`__ - Scrolls the line with the cursor to the middle of the viewport.
-- __`cycle - Scrolls the line with the cursor first to the middle of the viewport, then to the top, then to the bottom.
+- __`cycle` - Scrolls the line with the cursor first to the middle of the viewport, then to the top, then to the bottom.
 - __`prevword`__ - Moves the cursor to the beginning of the previous word.
 - __`nextword`__ - Moves the cursor to the beginning of the next word.
 - __`home`__ - Moves the cursor to the beginning of the current line.
 - __`end`__ - Moves the cursor to the end of the current line.
 - __`beginpara`__ - Moves the cursor to the beginning of the current paragraph.
 - __`endpara`__ - Moves the cursor to the end of the current paragraph.
-- __`prevblock`__ - Moves the cursor to the beginning of the current or preceding block of text. (Blocks are separated by one or more blank lines.)
+- __`prevblock`__ - Moves the cursor to the beginning of the current or preceding block of text. (Blocks are separated by one or more blank lines.
 - __`nextblock`__ - Moves the cursor to the beginning of the next block of text.
 - __`toprow`__ - Moves the cursor to the first row in the viewport.
 - __`bottomrow`__ - Moves the cursor to the last row in the viewport.
@@ -148,7 +187,7 @@ Following consistency with other major browsers and environments.
 - __`tabstospaces`__ - Toggles whether typed tabs are converted to spaces.
 - __`mouse`__  - Toggles mouse support
 
-## Valid menu sections are:
+## Valid Nano Menu Sections
 
 - __`main`__  - The main editor window where text is entered and edited.
 - __`help`__  - The help-viewer menu.
@@ -161,19 +200,24 @@ Following consistency with other major browsers and environments.
 - __`insert`__  - The ’insert file’ menu.
 - __`browser`__  - The ’file browser’ menu, for selecting a file to be opened or inserted or written to.
 - __`whereisfile`__  - The ’search for a file’ menu in the file browser.
-- __`gotodir - The ’go to directory’ menu in the file browser.
+- __`gotodir` - The go to directory menu in the file browser.
 - __`execute`__  - The menu for inserting the output from an external command, or for filtering the buffer (or the marked region) through an external command, or for executing one of several tools.
 - __`spell`__  - The menu of the integrated spell checker where the user can edit a misspelled word.
 - __`linter`__  - The linter menu, which allows jumping through the linting messages.
 - __`all`__ - A special name that encompasses all menus. For bind it means all menus where the specified function exists; for unbind it means all menus where the specified key exists.
 
+---
 
-### EXAMPLES
+### Binding a Function and Menu to a Key Command
 
-To make `Ctrl+Z` suspend nano:
+
+
+
+
+To make `Ctrl+J` suspend nano:
 
 ```
-bind ^Z suspend main
+bind ^J suspend main
 ```
 
 To make `Shift+Alt+C` copy the marked region to the system’s clipboard:
@@ -181,3 +225,7 @@ To make `Shift+Alt+C` copy the marked region to the system’s clipboard:
 ```
 bind Sh-M-C "{execute}| xsel -ib {enter}{undo}" main
 ```
+
+---
+
+__(Ɔ) 2026__ [8rents](https://github.com/8rents) under the [MIT License](../LICENSE.md)

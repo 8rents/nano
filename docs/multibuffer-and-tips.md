@@ -1,47 +1,84 @@
-# Using Nano's File Browser 
+# Using Nano's File Browser & Opening Multiple Files at Once
 
 > *...and other helpful tips*
 
 ---
 
-This document contains advanced nano workflow tips and tricks.
+## This Documents Table of Contents
 
-## In this document
-
-- [Opening multiple files](#opening-multiple-files)
-- [Cycle through files in nano](#cycle-through-files-in-nano)
-- [Opening files within nano](#opening-files-within-nano)
-- [Cut & paste a selection](#cut-&-paste-a-selection)
-- [Run a spell check](#run-a-spellcheck)
+- [Opening multiple files in Nano from the Command Line](#opening-multiple-files-from-the-command-line)
+- [Cycle Through Files in Nano](#cycle-through-files-in-nano)
+- [Opening Files Within Nano](#opening-files-within-nano)
+- [Cut & Paste a Selection](#cut-&-paste-a-selection)
+- [Run a Spell Check](#run-a-spellcheck)
 - [Lint a File](#lint-a-file)
 - [Reformat a File](#reformat-a-file)
 
-## Opening multiple files
+---
 
-First make sure `set multibuffer' is in your nanorc. It's enabled on this repositorys.
+This document contains advanced nano workflow tips and tricks.
 
-You can open as many files at once from your shell bt adding them aftrr the first.
+## Opening multiple files from the Command Line
+
+First make sure `set multibuffer` is in your nanorc. It's enabled on this repository's `nanorc`.
+
+You can open as many files at once from your shell by adding them after the first.
 
 ```
 nano file1.txt file2.txt
 ```
 
-## Cycle through files in nano
+### Cycle through files in nano
+
+Once you have multiple buffers open in Nano, you can cycle through them with `alt` + `,` or  `.`.
 
 - **next file:** `alt + .`
 - **prev file:** `alt + ,`
 
-## Opening files within nano
+### Opening Files from within Nano
+
+Once you're already in Nano you can still open up additional files in additional buffers (windows) using the file menu.
 
 - **Open file by name** - `ctrl + r`
   > *You can `tab` complete the names*
 
-## Cut & paste a selection
+## Selecting Text
 
-- **Make a selection** - `ctrl + 6` to set a mark. navigate to end point. `ctrl + k` to cut. `ctrl + u` to paste.
+One of those things we take for granted with modern editors
 
-## Run a spellcheck
+### Making a Selection
 
-## lint a file
+There's more than one way to make a selection
 
-## reformat a file
+- `ctrl + m` to sticky selection on
+- `shift + arrows` - guide selection
+- `^a` - select all 
+
+### Using the Selection
+
+- `^c` - copy
+- `^x` - cut. 
+- `^v` - paste.
+
+---
+
+## Advanced Editing with External Programs
+
+Nano has limited but some capability to use external programs to edit your documents.
+
+### Run a Spellcheck
+
+*working on this*
+
+### Lint a File
+
+*working on this too*
+
+### Reformat a File
+
+*and working on this as well...*
+
+
+---
+
+__(Ɔ) 2026__ [8rents](https://github.com/8rents) under the [MIT License](../LICENSE.md)
