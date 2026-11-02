@@ -14,12 +14,6 @@ The following are articles I've written to help you understand your nano config 
 
 ---
 
-### [Creating a Cascading Config for ease in Experimentation(cascading-config.md)
-
-Structuring your config (`nanorc`) files to cascade to make experimenting with new settings a breeze.
-
----
-
 ### [Working with Colors in Nano](colors.md)
 
 Some best practices for working with color. What works and what doesn't.

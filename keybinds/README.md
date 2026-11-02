@@ -1,1 +1,0 @@
-../docs/function-binding.md

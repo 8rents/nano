@@ -1,41 +1,169 @@
-# ======
-# nanorc
-# ======
-# user level nano configuration file
-# ----------------------------------
-# install to: $HOME/.config/nano
-# ----------------------------------
+## nanorc
+## ======
+## User level nano config file. Install to: $HOME/.config/nano
+#  Created using nano 9.3 on Android -  options marked with * are not supported in said version
+#  Edited: Monday November 2nd @ 1:45:03pm PST 2026
 
-# --------
-# Sections
-# --------
-# 1. editing options
-# 2. interface features
 
-# =======
-# editing
-# =======
+## Sections
+## ~~~~~~~~
+# 1. System nanorc files
+# 2. Interface Settings
+# 3. Editing Settings
+# 4. Keybinds Modernized
+# 5. Colorscheme
+# 6. Syntax Highlighting
 
-# Softwrap lines longer than display
-set softwrap
 
-# Line breaks at space, not character
+
+## system nanorc files
+## ~~~~~~~~~~~~~~~~~~~~
+## Must be absolute links. In the order they are loaded:
+
+# 1. System-wide configuration file.
+#    - /etc/nanorc
+# 2. Per-user configuration files (1 of the 3)
+#    - ~/.nanorc
+#    - $XDG_CONFIG_HOME/nano/nanorc
+#    -  ~/.config/nano/nanorc
+
+# Syntax definitions for the syntax coloring
+# note: less common languages in extras & custom user in
+#    - /usr/share/nano/*.nanorc
+#    - /usr/share/nano/extra/*.nanorc
+#    - ./lib/nano-syntax-highlighting/*.nanorc
+
+include /data/data/com.termux/files/usr/share/nano/*.nanorc
+include /data/data/com.termux/files/usr/share/nano/extra/*.nanorc
+
+
+## Interface Settings
+## ------------------
+
+# allow_insecure_backup - When backing up files, allow the backup to succeed even if its permissions can't be (re)set due to special OS considerations. You should NOT enable this option unless you are sure you need it.
+unset allow_insecure_backup
+
+# backup - When saving a file, create a backup file by adding a tilde (~) to the file's name.
+unset backup
+
+# backupdir - Set the directory where nano puts unique backup files. Only if file backups are enabled
+# set backupdir "backups"
+
+# guidestripe - Draw a vertical stripe at the given column, to help judge the width of the text. (The color of the stripe can be changed with 'set stripecolor'
+# set guidestripe 80
+
+# indicator - Display a "scrollbar" on the right-hand side
+set indicator
+
+# linenumbers - Show line numbers
+set linenumbers
+
+# minibar - Suppress titlebar,instead Show minibar on bottom
+set minibar
+
+# nohelp - Hide help on bottom
+set nohelp
+
+# positionlog - Display the cursor position row,col in the status bar
+set positionlog
+
+# quickblank - Do quick statusbar blanking. Statusbar messages will disappear after 1 keystroke instead of 25
+unset quickblank
+
+# constantshow - Constantly display the cursor position and line number on the statusbar/minibar as x,y at column 50
+set constantshow
+
+# stateflags - Use the top-right corner of the screen for showing some state flags:
+# - I when auto-indenting
+# - M when the mark is on
+# - L when hard-wrapping (breaking long lines)
+# - R when recording a macro
+# - S when soft-wrapping
+# - * is shown when the buffer has been modified
+set stateflags
+
+# mouse - Enable mouse support, When enabled, mouse clicks can be used to place the cursor, set the mark (with a double click),
+set mouse
+
+# Log search and replace strings to ~/.nano_history
+set historylog
+
+# Enable multiple file buffers
+set multibuffer
+
+# * morespace - Use blank line below title bar for editing
+# unset morespace
+
+# * smooth - Use smooth scrolling. Line by line, not chunks
+# set smooth
+
+# * nofollow - Don't follow symlinks when writing files
+# unset nofollow
+
+# zero - Hide all elements of the interface (title bar, status bar, and help lines) and use all rows of the terminal for showing the contents of the buffer. The status bar appears only when there is a significant message, and disappears after 1.5 seconds or upon the next keystroke. With alt+Z the title bar plus status bar can be toggled. With alt+X the help lines.
+unset zero
+
+## Editor Settings
+## ---------------
+
+# atblanks - When soft line wrapping is enabled, make it wrap lines at blank characters (tabs and spaces) instead of always at the edge of the screen.
 set atblanks
 
 # Use auto-indentation
 set autoindent
+
+# afterends - Make Ctrl+Right and Ctrl+Delete stop at word ends instead of beginnings
+set afterends
+
+# autoindent - Automatically indent a newly created line to the same number of tabs and/or spaces as the previous line (or as the next line if the previous line is the beginning of a paragraph
+set autoindent
+
+# backup - When writing a file, creates a backup of the current file
+unset backup
+
+# backupdir - Make and keep not just one backup file, but make and keep a uniquely numbered one every time a file is saved — when backups are enabled with set backup or --backup or -B. The uniquely numbered files are stored in the specified directory.
+# set backupdir "./backup"
+
+# showcursor - Put the cursor on the highlighted item in the file browser, and show the cursor in the help viewer, to aid braille users and people with poor vision
+set showcursor
+
+# smarthome - Make the Home key smarter. When Home is pressed anywhere but at the very beginning of non-whitespace characters on a line, the cursor jumps to that beginning (either forwards or backwards). If the cursor is already at that position, it jumps to the true beginning of the line.
+set smarthome
+
+# softwrap - Display lines that exceed the screen's width over multiple screen lines. (You can make this soft-wrapping occur at whitespace instead of rudely at the screen's edge, by using also set atblanks.)
+set softwrap
+
+# * solosidescroll - When the cursor approaches the right edge of the edit window, scroll only the current line sideways by a large amount, instead of scrolling all visible lines sideways by just the amount needed to keep the cursor in view. This latter whole-window smooth sideways scrolling is the new default behavior. The single-line jerky sideways scrolling enabled by this option was the old behavior — the only behavior that nano knew.
+# set solosidescroll
+
+# speller - Use the given program to do spell checking and correcting, instead of using the built-in corrector that calls hunspell(1) or spell(1).
+set speller "aspell -x -c"
+
+# stateflags - Use the top-right corner of the screen for showing some state flags: I when auto-indenting, M when the mark is on, L when hard-wrapping (breaking long lines), R when recording a macro, and S when soft-wrapping. When the buffer is modified, a star (*) is shown after the filename in the center of the title bar.
+set stateflags
+
+# tabsize - Use a tab size of number columns. The value of number must be greater than 0. The default value is 8.
+set tabsize 4
+
+# tabstospaces - Convert each typed tab to spaces — to the number of spaces that a tab at that position would take up. (Note: pasted tabs are not converted.)
+unset tabstospaces
+
+# trimblanks - Remove trailing whitespace from wrapped lines when automatic hard-wrapping occurs or when text is justified.
+set trimblanks
+
+# set unix - Save a file by default in Unix format. This overrides nano's default behavior of saving a file in the format that it had. (This option has no effect when you also use set noconvert.)
+unset unix
+
+# whitespace "characters" - Set the two characters used to indicate the presence of tabs and spaces. They must be single-column characters. The default pair for a UTF-8 locale is "»⋅", and for other locales ">.".
+
+# wordchars "characters" - Specify which other characters (besides the normal alphanumeric ones) should be considered as parts of words. When using this option, you probably want to unset wordbounds.
+set wordchars "'"
 
 # Remove blank lines at end of file
 set trimblanks
 
 # Don't add newlines to the ends of files
 set nonewlines
-
-# Set the tab size (default is 8)
-set tabsize 4
-
-# Convert typed tabs to spaces
-set tabstospaces
 
 # Make the 'Cut Text' command (normally ^K) cut from the cur rent cursor position to the end of  the  line,  instead  of cutting the entire line
 set cutfromcursor
@@ -46,9 +174,6 @@ set wordbounds
 # Let  an  unmodified  Backspace  or  Delete erase the marked region (instead of a single character, and without  affecting the cutbuffer)
 set zap
 
-# Make the Home key smarter. When Home is pressed anywhere but at the very beginning of non-whitespace characters on a line, the cursor will jump to that beginning (either forwards or backwards). If the cursor is already at that position, it will jump to the true beginning of the line
-set smarthome
-
 # Do case sensitive searches by default
 unset casesensitive
 
@@ -58,129 +183,219 @@ set nonewlines
 # Don't convert files from DOS/Mac format
 unset noconvert
 
-# =========
-# Interface
-# =========
 
-# Hide help on bottom
-set nohelp
+## Keybindings
+## -----------
+## Modernized keybindings for our favorite editor
+# List of functions: https://man.archlinux.org/man/nanorc.5.en
 
-# Supress titlebar,instead Show minibar on bottom
-set minibar
+# Modern Nano Keybindings for: nano 7.2
+# Syntax highlights (path might be different)
 
-# Do quick statusbar blanking. Statusbar messages will disappear after 1 keystroke instead of 25
-unset quickblank
+## Keybinds Cheatsheet
+## ~~~~~~~~~~~~~~~~~~~
 
-# Display a "scrollbar" on the righthand side
-set indicator
+## Save / Quit
+# ctrl+Q    Quit
+# ctrl+S    Save
+# alt+S     Save As
 
-# Show line numbers
-set linenumbers
+## Undo / Redo Last Command
+# ctrl-Z    Undo
+# alt-Z     Redo
 
-# Display the cursor position row,col in the status bar
-set positionlog
+## Copy / Paste
+# ctrl+C    Copy
+# ctrl+V    Paste
+# ctrl+X    Cut
+# ctrl+K    Zap: Delete line
 
-# Use blank line below title bar for editing
-# unset morespace
+## Edit Current Line
+# alt+[     Unindent current line
+# alt+]     Indent current line
+# ctrl+/    Comment/uncomment current line
 
-# Constantly display the cursor position and line number on the statusbar
-set constantshow
+## Find / Replace
+# ctrl+F    Search forwards (= alt+W with prompt)
+# alt+F     Search backwards (= alt+E with prompt)
+# ctrl+R    Replace
+# ctrl+G    Find Next
+# alt+G     Find Previous
 
-# State info in minibar
-set stateflags
+## Macros
+# alt+:     Record macro
+# alt+;     Play macro
 
-# Enable mouse support, When enabled, mouse clicks can be used to place the cursor, set the mark (with a double click),
-set mouse
+## Buffer Navigation
+# alt+,     switch to previous file
+# alt+.     switch to next file
+# ctrl+T    Run terminal command and place output in new buffer
 
-# Use smooth scrolling. Line by line, not chunks
-# set smooth
+## Edit Document
+# ctrl+E    Spell Check
+# alt+F     Format Document
+# alt+L     Lint Document
 
-# Don't follow symlinks when writing files
-# unset nofollow
+## Navigation
+# ctrl+L    goto line number
+# ctrl+Up   goto previous block
+# ctrl+Dwn  goto next block
+# ctrl+}    goto matching bracket
+# alt+Up    goto head of file (vialt+like)
+# alt+Dwn   goto end of file
 
-# Create backup files in "filename~"
-unset backup
+## Keybinding Syntax
+## ~~~~~~~~~~~~~~~~~
+## bind keys function menu
+# ex.  bind ^O browser browser - Opens file browser
 
-# Set the directory where nano puts unique backup files. Only if file backups are enabled
-# set backupdir "backups"
+## Do Not Rebind the following
+## ---------------------------
+# ^M (Enter) - not good idea
+# ^I (Tab) - not good idea
+# ^[ (Es) is not possible,
 
-# Log search and replace strings to ~/.nano_history
-set historylog
+## Valid Functions
+## ~~~~~~~~~~~~~~~
 
-# Enable multiple file buffers
-set multibuffer
+## Keybinds Menus
+## ~~~~~~~~~~~~~~
+# main - The main editor window where text is entered and edited.
+# help - The help-viewer menu.
+# search - The search menu (AKA whereis).
+# replace - The 'search to replace' menu.
+# replacewith - The 'replace with' menu, which comes up after 'search to replace'
+# yesno - The  'yesno' menu, where the Yes/No/All/Cancel question is asked.
+# gotoline - The 'goto line (and column)' menu.
+# writeout - The 'write file' menu.
+# insert - The 'insert file' menu.
+# browser - The 'file browser' menu, for selecting a file to be opened or inserted or written to.
+# whereisfile - The 'search for a file' menu in the file browser.
+# gotodir - The 'go to directory' menu in the file browser.
+# execute - The menu for inserting the output from an external command, or for filtering the buffer (or the marked region) through an external command, or for executing one of several tools.
+# spell - The menu of the integrated spell checker where the user can edit a misspelled word.
+# linter - The linter menu, which allows jumping through the linting messages.
+# all - A special name that encompasses all menus. For bind it means all menus where the specified function exists; for unbind it means all menus where the specified key exists.
 
-# ===============
-# interface color
-# ===============
-# Color options syntax:
+## Modernized Keybinds
+## -------------------
+## Here are the actual Keybinds
+
+## Saving & closing
+bind ^Q   exit          all     # quit
+bind ^S   savefile      all     # save
+bind M-S  writeout      all     # save as
+bind ^O   insert        all     # Open a file in a new buffer
+bind ^T   execute       main    # Run a command and capture output in new buffer
+
+## Undoing
+bind ^Z   undo          main    # undo last command
+bind M-Z  redo          main    # redo last command
+
+## Copy / Pasting
+bind ^C   copy          main    # copy
+bind ^X   cut           main    # cut
+bind ^V   paste         main    # paste
+bind ^K   zap           main    # delete rest of line
+
+## Current line editing
+bind M-]    indent      main     # Indent current line
+bind M-[    unindent    main     # Unindent current line
+bind ^/     comment     main     # Comment current line
+
+## Navigation
+bind ^L     gotoline    all      # Go To line number
+bind M-A    firstline   all      # Go To beginning of Document
+bind M-E    lastline    all      # Go to end of document
+
+## Selection
+bind M-M    mark        main   # set mark
+bind ^A "{firstline}{mark}{lastline}" main  # select all
+
+## Search
+bind ^F     whereis     all     # find
+bind M-F    wherewas    all     # find backwards
+bind ^G     findnext    all     # find next
+bind M-G   findprevious all     # find previous
+bind ^R     replace     all     # replace
+
+## Formatting
+bind ^E     speller     all      # Open spell checker
+bind M-F    formatter   main     # format document
+bind M-L    linter      all      # lint document
+
+
+## Colors in Nano
+## --------------
+
+## Color options syntax:
 # set option [bold,][italic,]foreground,background
-# -----------------
-# Valid color names
-# -----------------
-# basic colors [always supported]
-# black, white, red, magenta, green, yellow, blue, cyan, normal
-# -----------------
-# extendeded colors [less supported]
-# pink, purple, mauve, lagoon, mint, lime, peach, orange, latte, rosy, beet, plum, sea, sky, slate, teal, sage, brown, ocher, sand, tawny, brick, crimson, normal
-# --------------------
-# color name prefixes (you can prefix the following to any basic or advanced names. Like lightcyan, brightblue): bright, light
-# ---------------------
 
-# titlebar color
-# hidden in favor of bottom minibar
-set titlecolor bold,white
+## Basic Colors Names [Always Supported / Standard 8 Colors]
+# These will play nicely with the existing terminal theme.
+# black, red, green, yellow, blue, magenta, cyan, white and normal
 
-# statusbar color
-set statuscolor bold,white,lightblack
+## Bright basic color names
+# [for 16 color terminal schemes/ almost always supported]
+# The above 8 names prefixed with bright (ex. brightred, brightcyan)
+
+## Extended Color Names [Less Supported]
+# These are for 256 color schemes using these colors will override the existing color scheme values.
+# pink, purple, mauve, lagoon, mint, lime, peach, orange, latte, rosy, beet,
+# plum, sea, sky, slate, teal, sage, brown, ocher, sand, tawny, brick, crimson, normal
+
+
+## Colorscheme
+## -----------
+
+## Enabled
+
+# Bottom minibar color - in favor of top status bar
+set minicolor bold,gray,normal
+
+# scrollercolor - Use this color combination for the indicator alias “scrollbar”. See set titlecolor for more details. Background is the gutter.
+set scrollercolor gray
+
+# selectedcolor - Use this color combination for selected text. See set titlecolor for more details.
+set selectedcolor bold,pink,magenta
+
+# set spotlightcolor - Use this color combination for highlighting a search match. The default value is black,lightyellow. See set titlecolor for valid color names.
+set spotlightcolor bold,white,green
+
+# promptcolor - The input/dialog that appears when you are going to save a file
+set promptcolor bold,yellow,black
+
+# statuscolor - Use this color combination for the status bar. See set titlecolor for more details.
+set statuscolor bold,gray
 
 # statusbar error color
-set errorcolor bold,lightwhite,red
+set errorcolor bold,white,red
 
-# selected text color
-set selectedcolor bold,black,lightred
+# Line number color. Background is gutter
+set numbercolor gray
 
-# vertical guiding stripe
-# - off, for monitoring line length
-set stripecolor lightblack
+## Disabled
 
-# scrollbar indicator color
-# background is scrollbar gutter
-set scrollercolor black
+# titlecolor - Use this color combination for the title bar
+set titlecolor bold,gray
 
-# Line number color
-set numbercolor lightblack
+# keys colors - In the 2 bottom lines of help text key color is the keyboard shortcut
+set keycolor bold,brightyellow
 
-# keys colors
-set keycolor lightblack
+# functioncolor - In the 2 bottom lines of help text functioncolor is the description
+set functioncolor gray
 
-# function block color
-set functioncolor lightblack
+# stripecolor - Use this color combination for the vertical guiding stripe
+# set stripecolor ,black
 
-# Bottom minibar color
-# - in favor of top status bar
-set minicolor bold,lightblack
+## Improved Syntax Highlighting
+## ----------------------------
 
-# prompt color
-set promptcolor bold,white,yellow
+include /data/data/com.termux/files/home/dotfiles/nano/syntax/*.nanorc
 
-# ----------------------------
-# Modern key bindings for nano
-# ----------------------------
 
-# Insert keybindings hy fi here
-
-# ----------------------------
-# Improved Syntax Highlighting
-# ----------------------------
-
-# includes go here. 1 file per line
-
-# =======
-# Credits
-# =======
-# author: github.com/8rents
-# -------
-# Links
-# *  https://www.reddit.com/r/linux/comments/1f3jeoo/what_does_your_nanorc_look_like/
-# * https://github.com/davidhcefx/Modern-Nano-Keybinding
+## Credits
+## -------
+# - https://github.com/8rents/nano
+# - https://www.reddit.com/r/linux/comments/1f3jeoo/
+# - https://github.com/davidhcefx/Modern-Nano-Keybinding
