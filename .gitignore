@@ -1,8 +1,9 @@
 # Nano Git Ignore File
 # ====================
+# lib is a whitelist folder
 
-# Everything in lib/
+# Ignore Everything in lib/
 lib/
 
-# Except the main README.md in lib/
+# Include the main README.md in lib/ to allow the folder to commit
 !lib/README.md
