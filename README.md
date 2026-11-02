@@ -1,5 +1,7 @@
 __Nano__ __|__ [Documentation](docs/README.md)
 
+---
+
 # Pimp my Nano Config
 
 > *Modernizing the most dissed editor on the command line...*

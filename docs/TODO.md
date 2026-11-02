@@ -10,12 +10,7 @@
 
 ## Things To Do
 
-- [ ] Get the [Nano syntax highlighting plugin](https://github.com/galenguyer/nano-syntax-highlighting) working
-   - [x] Include it as a Submodule
-   - [ ] Re-write the main README
-- [ ] Add in modernized key bindings
-   - [x] Finish the doc [on functions to be bound](binding-functions.md)
-   - [x] Create a `keybindings/modern.nanorc` file
+*Nuffin' for now...*
 
 ---
 
@@ -25,6 +20,13 @@
 - [x] Fully comment all options in rc file
 - [x] Fix any formatting issues with the nanorc
 - [x] Get bulk of visual configuration done
+- [x] Get the [Nano syntax highlighting plugin](https://github.com/galenguyer/nano-syntax-highlighting) working
+   - [x] Include it as a Submodule
+   - [x] Re-write the main README
+- [x] Add in modernized key bindings
+   - [x] Finish the doc [on functions to be bound](binding-functions.md)
+   - [x] Create a `keybindings/modern.nanorc` file
+
 
 ---
 
