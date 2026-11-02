@@ -122,8 +122,8 @@ The following keybindings have been added to modernize nano with other text edit
 
 Where this repository is going and where it's been
 
-- [List of Past Changes by Version (Changelog)](../CHANGELOG.md)
-- [List of Upcoming Changes (To Do List)](../TODO.md)
+- [List of Past Changes by Version (Changelog)](docs/CHANGELOG.md)
+- [List of Upcoming Changes (To Do List)](docs/TODO.md)
 
 ---
 
@@ -131,10 +131,10 @@ Where this repository is going and where it's been
 
 Articles to help you better understand configuring nano
 
-- [Multibuffer& Workflow Tips](docs/multibuffer-and-tips/README.md)
-- [Working with colors in Nano](docs/colors/README.md)
-- [Notable Options](docs/notable-options/README.md)
-- [Functions in Nano and binding them to create a more modern feel](docs/function-binding/README.md)
+- [Multibuffer& Workflow Tips](docs/multibuffer-and-tips.md)
+- [Working with colors in Nano](docs/colors.md)
+- [Notable Options](docs/notable-options.md)
+- [Functions in Nano and binding them to create a more modern feel](docs/function-binding.md)
 
 ---
 
